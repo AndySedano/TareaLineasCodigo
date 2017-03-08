@@ -4,18 +4,13 @@ import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 
 public class Archivo {
-	
-	//Ojala sirva esto despues
-	public enum Lang {
-		JAVA, PYTHON, CPP, C, SWIFT, GROOVY
-	}
 
 	//Para leer archivos mas facil
 	private FileReader fr;
 	private BufferedReader br;
 
 	//Constructor mágico
-	public Archivo(String path, Lang l) {
+	public Archivo(String path) {
 		try {
 			fr = new FileReader(path);
 			br = new BufferedReader(fr);
